@@ -109,6 +109,12 @@
       input:focus {
         border: 2px solid #c58940;
       }
+      .network {
+        opacity: 0;
+      }
+      button:hover + .network {
+        opacity: 1;
+      }
     </style>
   </head>
   <body>
@@ -133,6 +139,7 @@
           <div class="box1">
             <button>Submit</button>
             <div
+              class="network"
               style="display: flex; flex-direction: column; align-items: center"
             >
               <div class="circle"></div>
