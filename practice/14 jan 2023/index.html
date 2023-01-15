@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMobWorld</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo"> 
+                <img src="images/logo.png" alt="BrandLogo">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+
+                </ul> 
+            </div>
+        </nav>
+        <div class="info"> 
+            <div class="overlay"> </div>
+
+            
+            <img src="images/mobile1.png" alt="Moblie Phone" class="mobile">
+                <div id="circle">
+                    <div class="feature one">
+                        <img src="images/camera.png" alt="Camera">
+
+                        <div>
+                            <h1>Camera</h1>
+                            <p>20 megapixel </p>
+                        
+                        </div>
+                    </div>
+                    <div class="feature two">
+                        <img src="images/processor.png" alt="Processor">
+
+                        <div>
+                            <h1>Processor</h1>
+                            <p>Octacore snapdragon</p>
+                        
+                        </div>
+                    </div>
+
+                    <div class="feature three">
+                        <img src="images/display.png" alt="Display">
+
+                        <div>
+                            <h1>Display</h1>
+                            <p>6.5 inch gorilla glass </p>
+                        
+                        </div>
+                    </div>
+
+                    <div class="feature four">
+                        <img src="images/battery.png" alt="Battery">
+
+                        <div>
+                            <h1>Battery</h1>
+                            <p>6000 mAh long lasting battery </p>
+                        
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+
+        <div class="controls">
+            <img src="images/arrow.png" alt="Upward arrow" id="Upbtn">
+            <h3>Features</h3>
+            <img src="images/arrow.png" alt="Downwards arrow" id="Downbtn">
+
+        </div>
+    </div>
+
+    <script>
+        var circle = document.getElementById("circle");
+
+        var Upbtn = document.getElementById("Upbtn");
+
+        var Downbtn = document.getElementById("Downbtn");
+
+        var rotatevalue = circle.style.transform;
+
+        var rotatesum;
+
+        Upbtn.onclick=function (){
+            rotatesum= rotatevalue + "rotate(-90deg)";
+
+         circle.style.transform=rotatesum;
+         
+         rotatevalue = rotatesum;
+        }
+
+        Downbtn.onclick=function (){
+            rotatesum= rotatevalue + "rotate(90deg)";
+
+         circle.style.transform=rotatesum;
+         
+         rotatevalue = rotatesum;
+        }
+    </script>
+
+</body>
+</html>
