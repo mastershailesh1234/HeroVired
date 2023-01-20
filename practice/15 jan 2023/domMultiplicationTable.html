@@ -1,0 +1,114 @@
+<html>
+<head>
+    <title>FSD-08</title>
+        <!--
+            Q:
+            Create a function that takes two numbers as arguments (num, length)
+            and returns an array of multiples of num until the array length reaches length.
+            
+            Example: -arrayOfMultiples(12, 10) ➞ [12, 24, 36, 48, 60, 72, 84, 96, 108, 120]
+
+            Notes: -Notice that num is also included in the returned array.
+        -->
+    <style>
+        table       { font-family: arial, sans-serif;border: 0; padding: 5px; width: 50%; background-color:aliceblue; }
+        td, th      { border: 0; text-align: center; padding: 10px; color:darkcyan; }
+        .tdLeft     { text-align: left; }
+        .tdRight    { text-align: right; }
+        .dividerLine{ width: 100%; margin: 0; left:0; background-color:darkcyan; color: darkcyan; height:2px; border-width:0; }
+        .buttonWP   { background-color:darkcyan; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 19px;  width:50%; }
+        .txtWP      { background-color:white; width: 80%; height:40px; border: 1; padding: 5px; text-align: left; text-decoration: none; display: inline-block; font-size: 16px;  }
+        #tblOutput  { height: 10%; }
+    </style>
+
+    <script>
+        function thirdQuestion(first,second){
+
+            var varFirstDigit = document.getElementById("txtFirstNumber").value;
+            var varSecondDigit = document.getElementById("txtSecondNumber").value;
+
+            var arrOutput = new Array(varSecondDigit);
+            for (var i=0; i<varSecondDigit; i++){
+                arrOutput[i] = varFirstDigit * (i+1);
+            }
+
+            var strOutput = "";
+            for(var i=0; i<varSecondDigit;i++){
+                strOutput = strOutput + " " + arrOutput[i]; 
+            }
+
+            document.getElementById("txtArray").value = strOutput;
+            elementDisplay('inline');
+            }
+
+        function elementDisplay(varStatus){
+            document.getElementById("txtArray").style.display= varStatus;
+            }
+    </script>
+
+</head>
+
+<body onload="elementDisplay('none')">
+    <center>
+        <table border="1">
+            <tr>
+                <th colspan="2">
+                    <h1>JavaScript DOM</h1>
+                </th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr class="dividerLine">
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <p style="text-align: left;">Question: Create a function that takes two numbers as arguments (num, length)
+                        <br>and returns an array of multiples of num until the array length reaches length.
+                        <br><br>Example: - arrayOfMultiples(12, 10) = [12, 24, 36, 48, 60, 72, 84, 96, 108, 120]
+                        <br><br>Notes: -Notice that num is also included in the returned array.</p>
+                </th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr class="dividerLine">
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tdRight" width="50%">
+                    <label>Enter the First Number: </label>
+                </td>
+                <td class="tdLeft" width="50%">
+                    <input type="text" id="txtFirstNumber" class="txtWP"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tdRight" width="50%">
+                    <label>Enter the Second Number: </label>
+                </td>
+                <td class="tdLeft" width="50%">
+                    <input type="text" id="txtSecondNumber" class="txtWP"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <button onclick="thirdQuestion()" class="buttonWP" >Display the Array</button>
+                </td>
+            </tr>
+        </table>
+        <br>
+
+        <table id="tblOutput">
+            <tr>
+                <td colspan="2" width="50%">
+                    <input style="text-align: center;" type="text" id="txtArray" class="txtWP" />
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

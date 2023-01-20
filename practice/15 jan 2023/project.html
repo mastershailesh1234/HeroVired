@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border: 0;
+        padding: 5px;
+        width: 50%;
+        background-color: aliceblue;
+      }
+      td,
+      th {
+        border: 0;
+        text-align: center;
+        padding: 10px;
+        color: darkcyan;
+      }
+      .tdLeft {
+        text-align: left;
+      }
+      .tdRight {
+        text-align: right;
+      }
+      .dividerLine {
+        width: 100%;
+        margin: 0;
+        left: 0;
+        background-color: darkcyan;
+        color: darkcyan;
+        height: 2px;
+        border-width: 0;
+      }
+      .buttonWP {
+        background-color: darkcyan;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 19px;
+        width: 50%;
+      }
+      .txtWP {
+        background-color: white;
+        width: 80%;
+        height: 40px;
+        border: 1;
+        padding: 5px;
+        text-align: left;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+      #tblOutput {
+        height: 10%;
+      }
+    </style>
+
+    <script>
+      function strQuestion() {
+        const el = document.getElementById("txtInputNumber");
+        const num = el.value;
+        var ans = 1;
+        for (let i = Number(num); i > 0; i--) {
+            ans *= i;
+        }
+        const el1 = document.getElementById("txtArray");
+        el1.value=ans;
+      }
+    </script>
+  </head>
+  <body>
+    <center>
+      <table border="1">
+        <tr>
+          <th colspan="2">
+            <h1>JavaScript DOM</h1>
+          </th>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <hr class="dividerLine" />
+          </td>
+        </tr>
+
+        <tr>
+          <th colspan="2">
+            <p style="text-align: left">
+              Question: Create a function that takes a numbers as argument (num)
+              <br />and returns the Factorial of it. <br /><br />Example: -
+              Factorial of(4) = 24
+            </p>
+          </th>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <hr class="dividerLine" />
+          </td>
+        </tr>
+
+        <tr>
+          <td class="tdRight" width="50%">
+            <label>Enter the Number: </label>
+          </td>
+          <td class="tdLeft" width="50%">
+            <input type="text" id="txtInputNumber" class="txtWP" />
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <button onclick="strQuestion()" class="buttonWP">
+              Calculate the Factorial
+            </button>
+          </td>
+        </tr>
+      </table>
+      <br />
+
+      <table id="tblOutput">
+        <tr>
+          <td colspan="2" width="50%">
+            <input
+              style="text-align: center"
+              type="text"
+              id="txtArray"
+              class="txtWP"
+            />
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
