@@ -5,10 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      .nav {
+        position: fixed;
+        width: 100%;
+        height: 20px;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        background-color: aquamarine;
+      }
+      li {
+        margin: 10px 15px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .question {
+        width: 70%;
+        height: 70vh;
+        margin: 100px auto;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 17px;
+      }
+      .container {
+        margin-top: 30px;
+      }
+      p {
+        margin: 10px 30px;
+      }
+      input {
+        width: 50%;
+        height: 35px;
+        text-align: center;
+      }
+      button {
+        width: 30%;
+        height: 30px;
+      }
+      h3 {
+        background-color: antiquewhite;
+        display: inline-block;
+        width: 30%;
+        text-align: center;
+        overflow-x: scroll;
+      }
+    </style>
   </head>
   <body>
+    <div class="nav">
+      <ul>
+        <li><a href="#qone">Ques 1</a></li>
+        <li><a href="#qtwo">Ques 2</a></li>
+        <li><a href="#qthree">Ques 3</a></li>
+        <li><a href="#qfour">Ques 4</a></li>
+        <li><a href="#qfive">Ques 5</a></li>
+        <li><a href="#qsix">Ques 6</a></li>
+      </ul>
+    </div>
     <div class="container">
-      <div class="question">
+      <div class="question" id="qone">
         <h2>Question 1:</h2>
         <p>
           Y2K problem: Databases written in 1970's used 2-digit fields to
@@ -27,7 +102,7 @@
         <button onclick="one()">Click to see the answer</button>
         <h3 id="oneans">0</h3>
       </div>
-      <div class="question">
+      <div class="question" id="qtwo">
         <h2>Question 2:</h2>
         <p>
           In a board game, a piece may advance 1-6 tiles forward depending on
@@ -48,7 +123,7 @@
         <button onclick="two()">Click to see the answer</button>
         <h3 id="twoans">0</h3>
       </div>
-      <div class="question">
+      <div class="question" id="qthree">
         <h2>Question 3:</h2>
         <p>
           Create a function that takes two numbers as arguments (num, length)
@@ -65,7 +140,7 @@
         <button onclick="three()">Click to see the answer</button>
         <h3 id="threeans">0</h3>
       </div>
-      <div class="question">
+      <div class="question" id="qfour">
         <h2>Question 4:</h2>
         <p>
           Given an array of positive integers. Find the length of the longest
@@ -82,22 +157,34 @@
         <button onclick="four()">Click to see the answer</button>
         <h3 id="fourans">0</h3>
       </div>
-      <div class="question">
+      <div class="question" id="qfive">
         <h2>Question 5:</h2>
         <p>
           Given an array, write a function to calculate its depth. Assume that a
           normal array has a depth of 1.
         </p>
-        <input type="text" name="five" id="five" placeholder="array in string format [1, [2, [3, 4]]] " />
+        <input
+          type="text"
+          name="five"
+          id="five"
+          placeholder="array in string format [1, [2, [3, 4]]] "
+        />
         <button onclick="five()">Click to see the answer</button>
         <h3 id="fiveans">0</h3>
       </div>
-       <div class="question">
+      <div class="question" id="qsix">
         <h2>Question 6:</h2>
         <p>
-          Given a letter, created a function which returns the nearest vowel to the letter. If two vowels are equidistant to the given letter, return the earlier vowel.
+          Given a letter, created a function which returns the nearest vowel to
+          the letter. If two vowels are equidistant to the given letter, return
+          the earlier vowel.
         </p>
-        <input type="text" name="six" id="six" placeholder="array in string format [1, [2, [3, 4]]] " />
+        <input
+          type="text"
+          name="six"
+          id="six"
+          placeholder="enter the alphabet "
+        />
         <button onclick="six()">Click to see the answer</button>
         <h3 id="sixans">0</h3>
       </div>
