@@ -37,11 +37,11 @@
       .question {
         width: 70%;
         height: 70vh;
-        margin: 100px auto;
+        margin: 50px auto;
         border: 1px solid black;
         border-radius: 5px;
         padding: 10px;
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -74,16 +74,16 @@
   <body>
     <div class="nav">
       <ul>
-        <li><a href="#qone">Ques 1</a></li>
-        <li><a href="#qtwo">Ques 2</a></li>
-        <li><a href="#qthree">Ques 3</a></li>
-        <li><a href="#qfour">Ques 4</a></li>
-        <li><a href="#qfive">Ques 5</a></li>
-        <li><a href="#qsix">Ques 6</a></li>
+        <li onclick="nav1()"><a href="#qone">Ques 1</a></li>
+        <li onclick="nav2()"><a href="#qtwo">Ques 2</a></li>
+        <li onclick="nav3()"><a href="#qthree">Ques 3</a></li>
+        <li onclick="nav4()"><a href="#qfour">Ques 4</a></li>
+        <li onclick="nav5()"><a href="#qfive">Ques 5</a></li>
+        <li onclick="nav6()"><a href="#qsix">Ques 6</a></li>
       </ul>
     </div>
     <div class="container">
-      <div class="question" id="qone">
+      <div class="question" id="qone" style="display: flex">
         <h2>Question 1:</h2>
         <p>
           Y2K problem: Databases written in 1970's used 2-digit fields to
@@ -190,5 +190,6 @@
       </div>
     </div>
     <script src="ans.js"></script>
+    <script src="hide.js"></script>
   </body>
 </html>
