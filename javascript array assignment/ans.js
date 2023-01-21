@@ -94,15 +94,38 @@ function five() {
   }
 }
 function six() {
-  // var a = document.getElementById("six");
-  // var ans = 0;
-  // if (a.value.length == 0) {
-  //   alert("Please enter the value in question six");
-  // } else {
-  //   for (var i = 0; i < a.value.length; i++) {
+  var a = document.getElementById("six");
+  var ans = 0;
+  if (a.value.length == 0) {
+    alert("Please enter the value in question six");
+  } else {
+    var arr = [0, 4, 8, 14, 20];
+    var given = a.value;
+    given = given.charCodeAt() - "a".charCodeAt();
 
-  //   }
-  //   document.getElementById("sixans").innerHTML = ans;
-  //   a.value = "";
-  // }
+    var index = 0;
+    if (given >= 20) {
+      index = 20;
+    } else {
+      for (var i = 0; i < 5; i++) {
+        if (given >= arr[i - 1] && given <= arr[i]) {
+          var one = Math.abs(given - arr[i]);
+          var two = Math.abs(given - arr[i - 1]);
+          if (one == two || one > two) {
+            index = arr[i - 1];
+          } else {
+            index = arr[i];
+          }
+          break;
+        }
+      }
+    }
+
+    var char = "a";
+    for (var i = 0; i < index; i++) {
+      char = String.fromCharCode(char.charCodeAt() + 1);
+    }
+    document.getElementById("sixans").innerHTML = char;
+    a.value = "";
+  }
 }
