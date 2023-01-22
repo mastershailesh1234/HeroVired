@@ -1,0 +1,19 @@
+body {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 80px;
+  width: 20%;
+}
+.counter {
+  font-size: 30px;
+  margin-top: 20px;
+}
