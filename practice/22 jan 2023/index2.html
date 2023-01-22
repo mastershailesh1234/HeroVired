@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="create()">Click Me</button>
+    <div id="container"></div>
+    <script>
+      var rand = Math.floor(Math.random() * 10);
+      var value = { num: rand };
+      var test = new Array(rand);
+      var color = ["red", "pink", "orange", "green", "magenta"];
+      var container = document.getElementById("container");
+      function create() {
+        while (container.lastElementChild != null) {
+          container.removeChild(container.lastElementChild);
+        }
+
+        for (var i = 0; i < value.num; i++) {
+          var ele = document.createElement("button");
+          ele.innerHTML = "team " + (i + 1);
+          var col = Math.floor(Math.random() * 5);
+          ele.style.background = color[col];
+          container.appendChild(ele);
+        }
+      }
+    </script>
+  </body>
+</html>
