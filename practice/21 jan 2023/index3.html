@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="name">
+      <p id="para">This is a para</p>
+    </div>
+    <script>
+      var el = document.createElement("p");
+      var contain = document.createTextNode("This is p from dom");
+      el.appendChild(contain);
+      el.style.background = "blue";
+      var loc = document.getElementById("para");
+      document.getElementById("name").appendChild(el);
+    </script>
+  </body>
+</html>
