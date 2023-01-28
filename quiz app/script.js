@@ -1,5 +1,4 @@
 let questionset = [
-  ["", [], ""],
   [
     "How do we get the DOM object in JS",
     ["getElementById()", "getObject()", "getElement()", "getNode()"],
@@ -21,20 +20,34 @@ let questionset = [
     "Both A and B",
   ],
 ];
-var attempt = document.getElementById("attempt");
-var score = document.getElementById("score");
-var question = document.getElementById("question");
-var option = document.getElementById("option");
-var i = 0;
-var correct = 0;
-function allocate() {
-  question.innerHTML = "Q" + i + ") " + questionset[i][0];
-  if (i != 0) attempt.innerHTML = `You have attempted ${i - 1} quesions`;
 
-  score.innerHTML = `Your current score is ${correct}`;
-  while (option.lastElementChild != null) {
-    option.removeChild(option.lastElementChild);
+var content = document.getElementById("content");
+var container = document.getElementById("container");
+var i = -1;
+var correct = 0;
+
+function addcontent() {
+  while (content.lastElementChild != null) {
+    content.removeChild(content.lastElementChild);
   }
+
+  var attempt = document.createElement("h2");
+  attempt.innerHTML = `You have attempted ${i} questions`;
+  attempt.setAttribute("id", "attempt");
+  content.appendChild(attempt);
+
+  var score = document.createElement("p");
+  score.innerHTML = `Your current score is ${correct}`;
+  score.setAttribute("id", "score");
+  content.appendChild(score);
+
+  var question = document.createElement("h3");
+  question.innerHTML = "Q" + (i + 1) + ") " + questionset[i][0];
+  question.setAttribute("id", "question");
+  content.appendChild(question);
+
+  var option = document.createElement("form");
+  option.setAttribute("id", "option");
   for (x of questionset[i][1]) {
     var ele = document.createElement("input");
     var ele1 = document.createElement("label");
@@ -47,20 +60,25 @@ function allocate() {
     ele1.setAttribute("for", x);
     ele1.innerHTML = x;
     option.appendChild(spa);
-    // option.appendChild(ele1);
   }
+  content.appendChild(option);
 }
 
 function clickme() {
-  console.log(i);
-  if (i == 0) {
+  console.log(i, questionset.length);
+  content.style.display = "flex";
+  if (i == -1) {
     i++;
-
     document.getElementById("button").innerHTML = "Submit and Next";
   } else if (i == questionset.length - 1) {
-    score.innerHTML = `Your current score is ${correct}`;
-    document.getElementById("button").innerHTML = "Reload";
-    i = 0;
+    document.getElementById("button").innerHTML = "Restart";
+    while (content.lastElementChild != null) {
+      content.removeChild(content.lastElementChild);
+    }
+    var ele = document.createElement("h3");
+    ele.innerHTML = `Final score is ${correct}/${questionset.length}`;
+    content.append(ele);
+    i = -1;
     correct = 0;
   } else {
     var answered = document.querySelector('input[name="options"]:checked');
@@ -71,8 +89,7 @@ function clickme() {
     if (answered.value == questionset[i][2]) {
       correct++;
     }
-
     i++;
   }
-  allocate();
+  if (i >= 0 && i < questionset.length) addcontent();
 }
