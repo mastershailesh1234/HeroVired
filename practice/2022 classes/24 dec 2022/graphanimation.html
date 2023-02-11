@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        overflow: hidden;
+        width: 1000px;
+        height: 1000px;
+        background-color: aqua;
+      }
+      .container div {
+        height: 50px;
+        background-color: blue;
+        animation: 1s ease-in-out 0 infinite alternate fill-1;
+        animation-delay: 0;
+        margin: 10px 0;
+        /* transition: width 2s linear 0s; */
+      }
+      .a {
+        width: 15px;
+      }
+      .b {
+        width: 20px;
+      }
+      .c {
+        width: 17px;
+      }
+      .d {
+        width: 21px;
+      }
+      .e {
+        width: 14px;
+      }
+      .f {
+        width: 12px;
+      }
+      .g {
+        width: 15px;
+      }
+      .container div:hover {
+        transform: scaleX(1.1);
+      }
+      @keyframes fill-1 {
+        0% {
+          /* transform: scaleX(0); */
+          background-color: blueviolet;
+        }
+        35% {
+          /* transform: scaleX(1); */
+          background-color: violet;
+        }
+        70% {
+          /* transform: scaleX(0.7); */
+          background-color: coral;
+        }
+        100% {
+          /* transform: scaleX(1.5); */
+          background-color: aqua;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="a"></div>
+      <div class="b"></div>
+      <div class="c"></div>
+      <div class="d"></div>
+      <div class="e"></div>
+      <div class="f"></div>
+      <div class="g"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+1.Intro to css
+2.made a basic tourism html website with css.
+3.learned about css selectors like clsss, id, element selectors, group selectors, attribute selectors.
+4.css inline, internal and external css.
+5.color declaration
+6.margin and padding
+7.float and clear
+8.table css, collapse
+9.nth-child selector and psedo selector like hover
+10.simple gym page with image and few columns.

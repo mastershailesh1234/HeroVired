@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      window.alert("Hero vired");
+      console.log("Hello");
+      document.write("Hello");
+
+      var a = parseInt(prompt("Enter first numner"));
+      var b = parseInt(prompt("Enter second number"));
+      var c = parseInt(prompt("Enter third number"));
+      console.log(typeof a);
+      console.log(a + b);
+
+      // operator practice 1
+      var a = parseInt(prompt("Enter value in fehrenite"));
+      a = (a - 32) * 5;
+      alert(a);
+
+      // operator practice 2
+      var b = parseInt(prompt("enter in km"));
+      var m = b * 1000;
+      var cm = b * 10000;
+      var mile = b * 0.62;
+      var foot = b * 3280;
+      console.log(m + "m", cm + "cm", mile + "mile", foot + "foot");
+
+      // if else statements
+      if (a > b) {
+        console.log(" a is greater");
+      } else {
+        console.log(" b i greaterr");
+      }
+      a > b ? "true" : "false";
+
+      // odd or even
+      console.log(a % 2 == 0 ? "even" : "odd");
+
+      // show largest of the 3 number
+      console.log(
+        "largest of three number is",
+        a > b ? (a > c ? a : c) : b > c ? b : c
+      );
+
+      // switch
+      var day = new Date();
+      switch (day.getDay()) {
+        case 0:
+          console.log("sunday");
+          break;
+        case 1:
+          console.log("monday");
+          break;
+        case 2:
+          console.log("tuesday");
+          break;
+        case 3:
+          console.log("wednesday");
+          break;
+        case 4:
+          console.log("thursday");
+          break;
+        case 5:
+          console.log("friday");
+          break;
+        case 6:
+          console.log("saturday");
+          break;
+        default:
+          console.log("invalid");
+      }
+
+      // function
+      // write a funtion to print cube of a number
+      function cube(a) {
+        console.log(a ** 3);
+        return a ** 3;
+      }
+      console.log(cube(3));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+1.css 2nd class
+2.implemented all the things that we learned on 26th nov class.
+3.extra thing was transform css property.
+4. made 2 pages like the tourism webpage using html tables.

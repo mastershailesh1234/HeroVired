@@ -1,0 +1,5 @@
+learned about flex box, container and item properties were taught.
+made card gallery using flex box as first flex application/
+made website skelton as 2nd usage of flex box.
+animation practice was also done at the begining of class
+ also column width count and gap was taught, image filters were also taught

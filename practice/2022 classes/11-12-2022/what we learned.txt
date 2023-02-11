@@ -1,0 +1,2 @@
+learned about flex properties, flex row and flex wrap also by doing a small task.
+made a product webpage using css and html.

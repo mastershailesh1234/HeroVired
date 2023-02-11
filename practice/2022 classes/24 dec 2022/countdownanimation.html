@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(208, 255, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+      span {
+        display: block;
+        transform: rotate(90deg);
+        transform-origin: bottom center;
+        width: 120px;
+        height: 120px;
+        /* background-color: aqua; */
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: animate 2s;
+      }
+      @keyframes animate {
+        0% {
+          transform: rotate(90deg);
+        }
+        50% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(-90deg);
+        }
+      }
+      .anime2 {
+        animation-delay: 1s;
+      }
+      .anime3 {
+        animation-delay: 2s;
+      }
+      .anime4 {
+        animation-delay: 3s;
+      }
+      .anime5 {
+        animation-delay: 4s;
+      }
+      .anime6 {
+        animation-delay: 5s;
+      }
+      .anime1 {
+        animation-delay: 6s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <span class="anime2">5</span>
+        <span class="anime3">4</span>
+        <span class="anime4">3</span>
+        <span class="anime5">2</span>
+        <span class="anime6">1</span>
+        <span class="anime1">GO</span>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        z-index: 1;
+        background-color: aliceblue;
+      }
+      nav ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 10px;
+      }
+      logo {
+        margin: 0 10px;
+      }
+      search {
+        padding: 20px 0;
+        margin: auto;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 80px;
+      }
+      input,
+      button {
+        width: 80%;
+        margin: 7px;
+        height: 30px;
+      }
+      button {
+        background-color: orange;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+        width: 60%;
+      }
+      .content img {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        /* align-items: center; */
+      }
+      .top img {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        /* align-items: center; */
+      }
+      content h2,
+      p {
+        margin: 10px 0;
+        text-align: center;
+      }
+      iframe {
+        display: inline-block;
+        margin: 20px auto;
+        width: 80%;
+      }
+      card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+      }
+      .card {
+        position: relative;
+        width: 300px;
+        height: 400px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        margin: 10px;
+      }
+      a {
+        text-decoration: none;
+        background-color: bisque;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      .top {
+        position: absolute;
+        top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: cadetblue;
+      }
+      .bottom {
+        position: absolute;
+        top: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      footer {
+        height: 90px;
+        margin-top: 20px;
+        background-color: gold;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <logo>PRODUCT</logo>
+      <ul>
+        <li>Features</li>
+        <li>How it Works</li>
+        <li>Pricing</li>
+      </ul>
+    </nav>
+
+    <main>
+      <search>
+        <h1>Sample Products for Shipping</h1>
+        <input type="text" />
+        <button>Get Started</button>
+      </search>
+      <content>
+        <div class="content">
+          <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="" />
+
+          <h2>Quality Product</h2>
+          <p>Our product are of premium quality</p>
+        </div>
+        <div class="content">
+          <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="" />
+
+          <h2>Fast Shipping</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam,
+            error!
+          </p>
+        </div>
+        <div class="content">
+          <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="" />
+
+          <h2>Quality Assurance</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            quam voluptate non pariatur in harum autem, provident quisquam.
+            Dignissimos, facilis!
+          </p>
+        </div>
+      </content>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/U74BJcr8NeQ"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <card>
+        <div class="card">
+          <div class="top">
+            <img
+              src="https://www.shutterstock.com/image-photo/surreal-image-african-elephant-wearing-260nw-1365289022.jpg"
+              alt=""
+            />
+            <h3>Lorem</h3>
+          </div>
+          <div class="bottom">
+            <h2>$600</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Consectetur, numquam.
+            </p>
+            <a href="">SELECT</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <img
+              src="https://www.shutterstock.com/image-photo/surreal-image-african-elephant-wearing-260nw-1365289022.jpg"
+              alt=""
+            />
+            <h3>Lorem</h3>
+          </div>
+
+          <div class="bottom">
+            <h2>$600</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Consectetur, numquam.
+            </p>
+            <a href="">SELECT</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <img
+              src="https://www.shutterstock.com/image-photo/surreal-image-african-elephant-wearing-260nw-1365289022.jpg"
+              alt=""
+            />
+            <h3>Lorem</h3>
+          </div>
+          <div class="bottom">
+            <h2>$600</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Consectetur, numquam.
+            </p>
+            <a href="">SELECT</a>
+          </div>
+        </div>
+      </card>
+      <footer></footer>
+    </main>
+  </body>
+</html>

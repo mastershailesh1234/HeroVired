@@ -1,0 +1,2 @@
+completed the product website which was started on 10th dec 2022.
+taught us about bootstrap and how to use it, worked with bootstrap buttons, tables, typography.

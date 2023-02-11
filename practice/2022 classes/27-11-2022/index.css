@@ -1,0 +1,31 @@
+body {
+  background-color: rgba(229, 37, 66, 0.205);
+}
+h1 {
+  text-align: center;
+  color: rgb(47, 131, 205);
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+img {
+  height: 300px;
+  width: 300px;
+  padding: 10px;
+}
+table,
+td {
+  margin: auto;
+  padding: 50px;
+  /* border-collapse: collapse;
+  border: 1px solid black; */
+  text-align: center;
+}
+#change {
+  font-style: italic;
+  font-weight: 800;
+  font-size: 20px;
+}
+td img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}

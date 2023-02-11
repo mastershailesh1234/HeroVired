@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            height: 40px;
+            width: 40px;
+            background-color: #9e579d;
+            padding-top: 20px;
+            border-bottom: 2px solid white;
+            animation: text 3s ease-in-out 0s infinite;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 45vh;
+            text-align: center;
+            color: white;
+        }
+        *{
+            background-color: #574b90;
+        }
+        @keyframes text{
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-50px);
+                border-bottom: 10px solid yellow;
+            }
+            100%{
+                transform: translateY(0);
+                border-bottom: 2px solid white;
+            }
+        }
+        #a{
+            animation-delay: 0s;
+        }
+        #b{
+            animation-delay: .1s;
+        }
+        #c{
+            animation-delay: .2s;
+        }
+        #d{
+            animation-delay: .3s;
+        }
+        #e{
+            animation-delay: .4s;
+        }
+        #f{
+            animation-delay: .5s;
+        }
+        #g{
+            animation-delay: .6s;
+        }
+        #h{
+            animation-delay: .7s;
+        }
+        #i{
+            animation-delay: .8s;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <span id="a">H</span>
+        <span id="b">E</span>
+        <span id="c">R</span>
+        <span id="d">O</span>
+        <span id="e">V</span>
+        <span id="f">I</span>
+        <span id="g">R</span>
+        <span id="h">E</span>
+        <span id="i">D</span>
+    </div>
+</body>
+</html>

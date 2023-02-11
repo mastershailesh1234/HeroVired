@@ -1,0 +1,40 @@
+body {
+  background-color: aqua;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 600px;
+  height: 400px;
+}
+
+p {
+  text-align: center;
+}
+
+#p1 {
+  color: red;
+}
+
+h1,
+p {
+  text-transform: capitalize;
+}
+
+.dalign {
+  float: left;
+  margin: 1px;
+}
+table,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: auto;
+  padding: 20px;
+}
