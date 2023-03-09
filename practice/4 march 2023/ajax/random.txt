@@ -1,0 +1,25 @@
+<span >Username :Ram</span><br>
+ <p>“It’s #Holiday, so with that in mind, we’re running a contest! Enter here: www.example.com/contest-link #BrandedHashtag”
+ </p>
+ <span >Username :harish</span><br>
+ <p> “Do you have questions about #event/product? Ask now, we’re answering all day tomorrow!”</p>
+ <span >Username :Michal</span><br>
+ <p> “Follow our process and you can boost conversions by 187% or more! www.example.com/link”</p>
+ <span >Username :Ram</span><br>
+ <p>“This is so cool RT: “Another Awesome Tweet” #Hashtag” </p>
+ <span >Username :alice</span><br>
+ <p>This month, we're giving $5 for a Like and $10 for a RT to help women around the 🌍. Let's reach the next $10m! http://tieks.com/foundation
+ </p>
+ <span >Username :jack</span><br>
+ <p>The unaffiliated neurotrauma consultant involved in clearing Dolphins QB Tua Tagovailoa during Sunday's game against the Bills has been fired after it was found he made "several mistakes" in his evaluation, according to ESPN and multiple reports.
+ </p>
+ <span >Username :peter</span><br>
+ <p>These are tough times in so many ways. But you know what helps lighten the spirit and inspire our common humanity? MUSIC! So let’s do something fun — make a great playlist in the comments. Share favorites. All genres. If you have a clip all the better. This can be a happy place.
+ </p>
+ <span >Username :rudra</span><br>
+ <p>Curation, negativity, judgement, egos – that’s not what being an athlete is about. #AthletesUnfiltered
+ </p>
+ <span >Username :christine</span><br>
+ <p>Great question! Instead of us telling you what we think, let's put it to Twitter. 
+Tweet us with your answer - best reply gets a free salad! https://twitter.com/jennyyy_labo/status/899744874802688000
+ </p>
