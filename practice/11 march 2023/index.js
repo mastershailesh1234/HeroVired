@@ -16,14 +16,14 @@ async function getData() {
           td.style.textAlign = "center";
 
           if (ele == "images") {
-            for (var j = 0; j < ress[i][ele].length; j++) {
-              var img = document.createElement("img");
-              img.src = ress[i][ele][j];
-              img.alt = "image";
-              img.style.height = "200px";
-              img.style.width = "200px";
-              td.appendChild(img);
-            }
+            // for (var j = 0; j < ress[i][ele].length; j++) {
+            //   var img = document.createElement("img");
+            //   img.src = ress[i][ele][j];
+            //   img.alt = "image";
+            //   img.style.height = "200px";
+            //   img.style.width = "200px";
+            //   td.appendChild(img);
+            // }
           } else if (ele == "thumbnail") {
             var img = document.createElement("img");
             img.src = ress[i][ele];
@@ -49,3 +49,4 @@ async function getData() {
       console.log(err);
     });
 }
+var search = document.getElementById("search");
