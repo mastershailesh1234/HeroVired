@@ -24,7 +24,7 @@ async function show() {
         tr.appendChild(ele2);
         table.appendChild(tr);
       } else {
-        alert("Please enter a valid country");
+        alert(`${input} is not a valid country `+"Please enter a valid country");
       }
     })
     .catch((err) => console.error(err));
