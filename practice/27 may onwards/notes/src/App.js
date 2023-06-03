@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import { Routes, Route } from "react-router-dom";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
+import Useeffect from "./components/Useeffect";
 function App() {
   const [num, setNum] = useState("Hello");
   const [show, setShow] = useState(true);
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/useeffect" element={<Useeffect />} />
       </Routes>
     </>
   );
