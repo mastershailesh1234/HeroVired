@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../CSS/products.css";
+import { Link } from "react-router-dom";
 const Useeffect = () => {
   console.log(1);
   let a = 10;
@@ -39,9 +40,11 @@ const Useeffect = () => {
         data.map((ele) => {
           return (
             <div className="products">
-              <h1>{ele.title}</h1>
-              {/* <p>{ele.description}</p> */}
+              <h3>{ele.title}</h3>
               <img src={ele.thumbnail} alt="" />
+              <p>{ele.description}</p>
+              <button>Add to cart</button>
+              <button>View</button>
             </div>
           );
         })}

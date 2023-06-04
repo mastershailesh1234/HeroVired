@@ -20,7 +20,7 @@ const Login = () => {
         </div>
         <button className="button">LOGIN</button>
         <p>
-          Not made any account?<Link to="/">Sign up</Link>
+          Not made any account?<Link to="/signup">Sign up</Link>
         </p>
       </div>
     </div>
