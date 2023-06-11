@@ -1,0 +1,27 @@
+.header_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(222, 215, 219, 0.53);
+}
+.header_button {
+  width: 100px;
+  margin: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  height: 30px;
+}
+.search {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header_search {
+  width: 300px;
+  margin: 0 5px;
+}

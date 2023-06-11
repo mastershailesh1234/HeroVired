@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../CSS/products.css";
 import { Link } from "react-router-dom";
-const Useeffect = () => {
+const Products = () => {
   console.log(1);
   let a = 10;
   let ele1 = document.getElementById("header");
@@ -52,4 +52,4 @@ const Useeffect = () => {
   );
 };
 
-export default Useeffect;
+export default Products;
